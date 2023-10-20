@@ -1,5 +1,5 @@
 .app {
-  background-color: var(--primary-color);
+  background-color: var(--white-color);
   font-family: var(--font-base);
 }
 
@@ -53,9 +53,29 @@
 
 .head-text {
   font-size: 2.75rem;
-  font-weight: 800;
+  font-weight: 500;
   text-align: center;
   color: var(--black-color);
+  text-transform: capitalize;
+
+  span {
+    color: var(--secondary-color);
+  }
+
+  @media screen and (min-width: 2000px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 450px) {
+    font-size: 2rem;
+  }
+}
+
+.subtitle-text {
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: center;
+  color: var(--gray-color);
   text-transform: capitalize;
 
   span {
